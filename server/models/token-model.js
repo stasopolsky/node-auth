@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose");
 
-const Token = new Schema({
+const TokenSchema = new Schema({
   user: { type: Schema.Types.ObjectId, ref: "User" },
   refreshToken: { type: String },
 });
